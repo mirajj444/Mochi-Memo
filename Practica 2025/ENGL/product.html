@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochi Memo | Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/css_main.css" />
+    <link rel="stylesheet" href="../css/css_product.css" />
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="scrolling-container">
+        <div class="scrolling-text">
+          <span class="ad-message">🌎 Loved by 10,000+ Happy Customers!</span>
+          <span class="ad-message">📦 Free Shipping on All Orders!</span>
+          <span class="ad-message"
+            >✨ New Arrivals Just Dropped — Shop Now!</span
+          >
+          <span class="ad-message">🌎 Loved by 10,000+ Happy Customers!</span>
+          <span class="ad-message">📦 Free Shipping on All Orders!</span>
+          <span class="ad-message"
+            >✨ New Arrivals Just Dropped — Shop Now!</span
+          >
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header_top">
+        <div class="search_container">
+          <button class="search_icon" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <div class="search_bar">
+            <input
+              type="text"
+              placeholder="Search products..."
+              aria-label="Search input" />
+          </div>
+        </div>
+        <div class="title">
+          <a href="index.html" style="text-decoration: none; color: inherit"
+            >Mochi Memo</a
+          >
+        </div>
+        <div class="icons_container">
+          <div class="icons">
+            <div class="profile-dropdown">
+              <button class="profile-icon" aria-label="User profile">
+                <i class="fas fa-user"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="login.html" id="login-link">Log In</a>
+                <a href="register.html" id="register-link">Register</a>
+              </div>
+            </div>
+            <div class="wishlist-container">
+              <a href="wishlist.html" class="wishlist-icon">
+                <i class="fas fa-heart"></i>
+                <span class="wishlist-counter">0</span>
+              </a>
+            </div>
+            <div class="cart-container">
+              <a href="#" class="cart-icon" id="cart-toggle">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-counter">0</span>
+              </a>
+            </div>
+            <div class="cart-sidebar">
+              <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart">&times;</button>
+              </div>
+              <div class="cart-items">
+                <div class="empty-cart">
+                  <i class="fas fa-shopping-bag"></i>
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+              <div class="cart-footer">
+                <div class="cart-total">
+                  <span>Total:</span>
+                  <span class="total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+              </div>
+            </div>
+            <div class="cart-overlay"></div>
+          </div>
+          <div class="language_toggle">
+            <a
+              href="#"
+              class="language-toggle"
+              style="text-decoration: none; color: inherit">
+              <span id="languageText">RO</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_search">
+        <div class="header_search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search products..." />
+        </div>
+      </div>
+      <div class="navbar">
+        <a href="products.html?sort=newest">New Arrivals</a>
+        <a href="products.html">Shop</a>
+        <a href="collections.html">Collections</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <div class="back-to-products-full">
+        <a href="products.html" class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Back to Products
+        </a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="product-main-image" src="" alt="" />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="top-dets">
+            <span class="product-category" id="product-category"></span>
+            <h1 id="product-name"></h1>
+
+            <div class="product-meta">
+              <div class="product-rating" id="product-rating"></div>
+              <span class="review-count" id="review-count"></span>
+            </div>
+
+            <div class="product-description">
+              <div class="product-title">About this item</div>
+              <p id="product-description-text"></p>
+            </div>
+          </div>
+
+          <div class="bottom-dets">
+            <div class="product-price" id="product-price"></div>
+            <small class="price-note">Price when purchased online</small>
+
+            <div class="return-policy">
+              <i class="fas fa-arrow-rotate-left"></i>
+              <span>Free 90-day returns</span>
+            </div>
+
+            <div class="product-actions">
+              <button class="add-to-cart-btn" id="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+              <a href="wishlist.html" class="wishlist-btn-circle">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">Mochi Memo</div>
+          <div class="footer-copyright">© 2025 Mochi Memo Inc.</div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="blog.html">News & Updates</a></li>
+              <li><a href="loyalty.html">Loyalty Program</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>LEGAL INFORMATION</h3>
+            <ul>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="tos.html">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>FOLLOW US</h3>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.tiktok.com/@max20499?lang=en"
+                  target="_blank">
+                  <i class="fab fa-tiktok"></i>
+                  <span>TikTok</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/dailycats.co/?hl=en"
+                  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/DailyCatPics" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script_products.js"></script>
+    <script src="js/script_main.js"></script>
+  </body>
+</html>
